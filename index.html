@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>HRO Demonstration &amp; Evaluation Project - Intactix Systems</title><style>body.turbo-hide-theme-header .elementor-location-header { display: block !important; }
+<!doctype html><html lang="en" class="js csspointerevents no-touchevents mediaqueries"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HRO Demonstration & Evaluation Project - Intactix Systems</title><style>body.turbo-hide-theme-header .elementor-location-header { display: block !important; }
 body.turbo-hide-theme-header header, body.turbo-hide-theme-header .site-header, body.turbo-hide-theme-header .main-header, body.turbo-hide-theme-header #masthead, body.turbo-hide-theme-header .ast-site-header, body.turbo-hide-theme-header .storefront-header, body.turbo-hide-theme-header .generatepress-header, body.turbo-hide-theme-header .neve-header, body.turbo-hide-theme-header .hello-elementor-header { display: none !important; }
+img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px; }
+@media (max-width: 1024px){.hfe-nav-menu__breakpoint-tablet ul.hfe-nav-menu { padding-top: 10px; padding-bottom: 10px; }
+.hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__toggle:not(.hfe-active-menu) + nav ul.hfe-nav-menu { display: none; }
+}
 @keyframes spin { 
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -8,6 +11,38 @@ body.turbo-hide-theme-header header, body.turbo-hide-theme-header .site-header, 
 @keyframes fadeIn { 
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+#tahefobu-header { opacity: 0; transform: none; pointer-events: none; }
+#tahefobu-header.tahefobu-ready { opacity: 1; pointer-events: auto; transition: opacity 0.25s linear; }
+ul.hfe-nav-menu, .hfe-nav-menu li, .hfe-nav-menu ul { margin: 0px; padding: 0px; list-style: none !important; }
+.hfe-nav-menu li.menu-item { position: relative; }
+div.hfe-nav-menu, .elementor-widget-hfe-nav-menu .elementor-widget-container { display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; }
+.hfe-nav-menu__layout-horizontal, .hfe-nav-menu__layout-horizontal .hfe-nav-menu { display: flex; }
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu { flex-wrap: wrap; }
+.hfe-nav-menu::before, .hfe-nav-menu::after { content: ""; display: table; clear: both; }
+.hfe-nav-menu__align-left .hfe-nav-menu { margin-right: auto; -webkit-box-pack: start; justify-content: flex-start; }
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu { display: flex; flex-wrap: wrap; }
+.hfe-nav-menu a.hfe-menu-item, .hfe-nav-menu a.hfe-sub-menu-item { line-height: 1; text-decoration: none; display: flex; -webkit-box-pack: justify; box-shadow: none; -webkit-box-align: center; align-items: center; justify-content: space-between; }
+.hfe-nav-menu a.hfe-menu-item:hover, .hfe-nav-menu a.hfe-sub-menu-item:hover { text-decoration: none; }
+.hfe-nav-menu__layout-horizontal { font-size: 0px; }
+.hfe-nav-menu__layout-horizontal li.menu-item, .hfe-nav-menu__layout-horizontal > li.menu-item { font-size: medium; }
+.hfe-nav-menu-icon { padding: 0.35em; border: 0px solid; }
+.hfe-nav-menu-icon svg { width: 25px; height: 25px; line-height: 25px; font-size: 25px; }
+.hfe-menu-item-center .hfe-nav-menu li a.hfe-menu-item, .hfe-menu-item-center .hfe-nav-menu li a.hfe-sub-menu-item { margin-right: 0px; }
+.hfe-nav-menu__layout-expandible { transition-property: display; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+.hfe-nav-menu__layout-expandible { visibility: hidden; opacity: 0; }
+.hfe-layout-expandible nav { height: 0px; }
+.hfe-nav-menu__toggle { display: flex; font-size: 22px; cursor: pointer; border: 0px solid; border-radius: 3px; color: rgb(73, 76, 79); position: relative; line-height: 1; }
+.hfe-layout-horizontal .hfe-nav-menu__toggle, .hfe-layout-vertical .hfe-nav-menu__toggle { visibility: hidden; opacity: 0; display: none; }
+.hfe-nav-menu-icon { display: inline-block; line-height: 1; text-align: center; }
+.hfe-nav-menu .menu-item a::before, .hfe-nav-menu .menu-item a::after { display: block; position: absolute; transition: 0.3s cubic-bezier(0.58, 0.3, 0.005, 1); }
+.hfe-nav-menu .menu-item a.hfe-menu-item:not(:hover):not(:focus):not(.current-menu-item):not(.highlighted)::before, .hfe-nav-menu .menu-item a.hfe-menu-item:not(:hover):not(:focus):not(.current-menu-item):not(.highlighted)::after { opacity: 0; }
+.hfe-nav-menu .menu-item a.hfe-menu-item:hover::before, .hfe-nav-menu .menu-item a.hfe-menu-item:hover::after, .hfe-nav-menu .menu-item a.hfe-menu-item:focus::before, .hfe-nav-menu .menu-item a.hfe-menu-item:focus::after, .hfe-nav-menu .menu-item a.hfe-menu-item.highlighted::before, .hfe-nav-menu .menu-item a.hfe-menu-item.highlighted::after, .hfe-nav-menu .current-menu-item::before, .hfe-nav-menu .current-menu-item::after { transform: scale(1); }
+@media only screen and (max-width: 1024px){.hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__layout-horizontal li, .hfe-nav-menu__breakpoint-tablet .hfe-nav-menu { width: 100%; margin-right: 0px; }
+.hfe-nav-menu__breakpoint-tablet .hfe-layout-horizontal .hfe-nav-menu__toggle, .hfe-nav-menu__breakpoint-tablet .hfe-layout-vertical .hfe-nav-menu__toggle { display: block; }
+.hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__layout-horizontal .hfe-nav-menu { visibility: hidden; opacity: 0; }
+.hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__layout-horizontal, .hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__layout-vertical { visibility: hidden; opacity: 0; height: 0px; }
+.hfe-nav-menu__breakpoint-tablet .hfe-layout-horizontal .hfe-nav-menu__toggle, .hfe-nav-menu__breakpoint-tablet .hfe-layout-vertical .hfe-nav-menu__toggle { visibility: visible; opacity: 1; display: block; }
 }
 @font-face { font-family: linea-arrows-10; src: url(https://www.intactix.ca/wp-content/plugins/th-widget-pack/assets/icons/linea/linea-arrows-10.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/th-widget-pack/assets/icons/linea/linea-arrows-10.ttf) format("truetype"); font-weight: normal; font-style: normal; font-display: swap; }
 @font-face { font-family: linea-basic-10; src: url(https://www.intactix.ca/wp-content/plugins/th-widget-pack/assets/icons/linea/linea-basic-10.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/th-widget-pack/assets/icons/linea/linea-basic-10.ttf) format("truetype"); font-weight: normal; font-style: normal; font-display: swap; }
@@ -26,12 +61,38 @@ body.turbo-hide-theme-header header, body.turbo-hide-theme-header .site-header, 
 @media (min-resolution: 192dpi){:root { --wp-admin-border-width-focus: 1.5px; }
 }
 :root { --wp--preset--font-size--normal: 16px; --wp--preset--font-size--huge: 42px; }
+.screen-reader-text { border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; overflow-wrap: normal !important; }
+.screen-reader-text:focus { background-color: rgb(221, 221, 221); clip-path: none; color: rgb(68, 68, 68); display: block; font-size: 1em; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; }
+html :where(.has-border-color) { border-style: solid; }
+html :where([style*="border-color"]) { border-style: solid; }
+html :where([style*="border-top-color"]) { border-top-style: solid; }
+html :where([style*="border-right-color"]) { border-right-style: solid; }
+html :where([style*="border-bottom-color"]) { border-bottom-style: solid; }
+html :where([style*="border-left-color"]) { border-left-style: solid; }
+html :where([style*="border-width"]) { border-style: solid; }
+html :where([style*="border-top-width"]) { border-top-style: solid; }
+html :where([style*="border-right-width"]) { border-right-style: solid; }
+html :where([style*="border-bottom-width"]) { border-bottom-style: solid; }
+html :where([style*="border-left-width"]) { border-left-style: solid; }
 html :where(img[class*="wp-image-"]) { height: auto; max-width: 100%; }
+:where(figure) { margin: 0px 0px 1em; }
+html :where(.is-position-sticky) { --wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height,0px); }
+@media screen and (max-width: 600px){html :where(.is-position-sticky) { --wp-admin--admin-bar--position-offset: 0px; }
+}
 :root { --wp--preset--aspect-ratio--square: 1; --wp--preset--aspect-ratio--4-3: 4/3; --wp--preset--aspect-ratio--3-4: 3/4; --wp--preset--aspect-ratio--3-2: 3/2; --wp--preset--aspect-ratio--2-3: 2/3; --wp--preset--aspect-ratio--16-9: 16/9; --wp--preset--aspect-ratio--9-16: 9/16; --wp--preset--color--black: #000000; --wp--preset--color--cyan-bluish-gray: #abb8c3; --wp--preset--color--white: #ffffff; --wp--preset--color--pale-pink: #f78da7; --wp--preset--color--vivid-red: #cf2e2e; --wp--preset--color--luminous-vivid-orange: #ff6900; --wp--preset--color--luminous-vivid-amber: #fcb900; --wp--preset--color--light-green-cyan: #7bdcb5; --wp--preset--color--vivid-green-cyan: #00d084; --wp--preset--color--pale-cyan-blue: #8ed1fc; --wp--preset--color--vivid-cyan-blue: #0693e3; --wp--preset--color--vivid-purple: #9b51e0; --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%); --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%); --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%); --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%); --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%); --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%); --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%); --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%); --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%); --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%); --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); --wp--preset--font-size--small: 13px; --wp--preset--font-size--medium: 20px; --wp--preset--font-size--large: 36px; --wp--preset--font-size--x-large: 42px; --wp--preset--spacing--20: 0.44rem; --wp--preset--spacing--30: 0.67rem; --wp--preset--spacing--40: 1rem; --wp--preset--spacing--50: 1.5rem; --wp--preset--spacing--60: 2.25rem; --wp--preset--spacing--70: 3.38rem; --wp--preset--spacing--80: 5.06rem; --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2); --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4); --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2); --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0); --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0); }
 :where(body) { margin: 0px; }
+:where(.is-layout-flex) { gap: 0.5em; }
+:where(.is-layout-grid) { gap: 0.5em; }
 body .is-layout-flex { display: flex; }
+.is-layout-flex > :is(*, div) { margin: 0px; }
 body .is-layout-grid { display: grid; }
+.is-layout-grid > :is(*, div) { margin: 0px; }
 body { padding: 0px; }
+:root :where(.wp-element-button, .wp-block-button__link) { background-color: rgb(50, 55, 60); border-width: 0px; color: rgb(255, 255, 255); font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; padding: calc(0.667em + 2px) calc(1.333em + 2px); text-decoration: none; text-transform: inherit; }
+.turbo-header-template, #tahefobu-header { position: relative; z-index: 9999; }
+.ta-sticky-header { position: sticky; top: 0px; z-index: 9999; }
+.ta-sticky-header, .turbo-header-template.ta-header-scroll-animation { top: var(--ta-sticky-top, 0); }
+#tahefobu-header, .turbo-header-template.ta-header-scroll-animation { transition: transform 0.25s, opacity 0.25s; will-change: transform; }
 body.turbo-hide-theme-header header, body.turbo-hide-theme-header .site-header, body.turbo-hide-theme-header .main-header, body.turbo-hide-theme-header #masthead, body.turbo-hide-theme-header .ast-site-header, body.turbo-hide-theme-header .storefront-header, body.turbo-hide-theme-header .generatepress-header, body.turbo-hide-theme-header .neve-header, body.turbo-hide-theme-header .hello-elementor-header, body.turbo-hide-theme-header .elementor-location-header { display: none !important; }
 body:not(.admin-bar) .gm-navigation-drawer { top: 0px; height: 100%; }
 html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
@@ -47,18 +108,17 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
 }
 .fa-map-o::before { content: ""; }
 .fa-envelope-open-o::before { content: ""; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; }
 @font-face { font-family: crane-font; src: url(https://www.intactix.ca/wp-content/plugins/groovy-menu/assets/fonts/crane-font.woff?hhxb42) format("woff"); font-weight: normal; font-style: normal; font-display: block; }
 @media (min-width: 1024px){body.admin-bar .dialog-lightbox-widget { height: calc(-32px + 100vh); }
 }
 @media (max-width: 1024px){body.admin-bar .dialog-type-lightbox { position: sticky; height: 100vh; }
 }
+.elementor-screen-only, .screen-reader-text, .screen-reader-text span, .ui-helper-hidden-accessible { position: absolute; top: -10000em; width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; }
 .elementor *, .elementor ::after, .elementor ::before { box-sizing: border-box; }
 .elementor a { box-shadow: none; text-decoration: none; }
 .elementor img { height: auto; max-width: 100%; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 0px; box-shadow: none; }
 .elementor-element { --flex-direction: initial; --flex-wrap: initial; --justify-content: initial; --align-items: initial; --align-content: initial; --gap: initial; --flex-basis: initial; --flex-grow: initial; --flex-shrink: initial; --order: initial; --align-self: initial; flex-basis: var(--flex-basis); flex-grow: var(--flex-grow); flex-shrink: var(--flex-shrink); order: var(--order); align-self: var(--align-self); }
 .elementor-element:where(.e-con-full, .elementor-widget) { flex-direction: var(--flex-direction); flex-wrap: var(--flex-wrap); justify-content: var(--justify-content); align-items: var(--align-items); align-content: var(--align-content); gap: var(--gap); }
-.elementor-invisible { visibility: hidden; }
 .elementor-align-center { text-align: center; }
 .elementor-align-center .elementor-button { width: auto; }
 :root { --page-title-display: block; }
@@ -68,11 +128,13 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
 }
 .elementor-widget { position: relative; }
 .elementor-widget:not(:last-child) { margin-bottom: 20px; }
+.elementor-widget:not(:last-child).elementor-absolute, .elementor-widget:not(:last-child).elementor-widget__width-auto, .elementor-widget:not(:last-child).elementor-widget__width-initial { margin-bottom: 0px; }
 .e-con { --border-radius: 0; --display: flex; --flex-direction: column; --flex-basis: auto; --flex-grow: 0; --flex-shrink: 1; --container-widget-width: 100%; --container-widget-height: initial; --container-widget-flex-grow: 0; --container-widget-align-self: initial; --content-width: Min(100%,var(--container-max-width,1140px)); --width: 100%; --min-height: initial; --height: auto; --text-align: initial; --margin-top: 0; --margin-right: 0; --margin-bottom: 0; --margin-left: 0; --padding-top: var(--container-default-padding-top,10px); --padding-right: var(--container-default-padding-right,10px); --padding-bottom: var(--container-default-padding-bottom,10px); --padding-left: var(--container-default-padding-left,10px); --position: relative; --z-index: revert; --overflow: visible; --gap: var(--widgets-spacing,20px); --overlay-mix-blend-mode: initial; --overlay-opacity: 1; --overlay-transition: 0.3s; position: var(--position); flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis); width: var(--width); min-width: 0px; min-height: var(--min-height); height: var(--height); border-radius: var(--border-radius); margin: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left); padding-left: var(--padding-left); padding-right: var(--padding-right); z-index: var(--z-index); overflow: var(--overflow); transition: background var(--background-transition,.3s),border var(--border-transition,.3s),box-shadow var(--border-transition,.3s),transform var(--e-con-transform-transition-duration,.4s); }
 .e-con-full, .e-con > .e-con-inner { flex-direction: var(--flex-direction); text-align: var(--text-align); padding-top: var(--padding-top); padding-bottom: var(--padding-bottom); }
 .e-con, .e-con > .e-con-inner { display: var(--display); }
 .e-con-boxed { flex-flow: column; text-align: initial; place-content: normal; align-items: normal; gap: initial; }
 .e-con > .e-con-inner { flex-wrap: var(--flex-wrap); justify-content: var(--justify-content); align-items: var(--align-items); align-content: var(--align-content); gap: var(--gap); width: 100%; max-width: var(--content-width); margin: 0px auto; padding-inline: 0px; height: 100%; flex: 1 1 auto; align-self: auto; }
+:is(.elementor-section-wrap, [data-elementor-id]) > .e-con { --margin-right: auto; --margin-left: auto; max-width: min(100%,var(--width)); }
 .e-con .elementor-widget.elementor-widget { margin-bottom: 0px; }
 .e-con::before, .e-con > .e-con-inner > .elementor-background-slideshow::before, .e-con > .e-con-inner > .elementor-background-video-container::before, .e-con > .elementor-background-slideshow::before, .e-con > .elementor-background-video-container::before, .e-con > .elementor-motion-effects-container > .elementor-motion-effects-layer::before { content: var(--background-overlay); display: block; position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; mix-blend-mode: var(--overlay-mix-blend-mode); opacity: var(--overlay-opacity); transition: var(--overlay-transition,.3s); border-radius: var(--border-radius); }
 .e-con::before { transition: background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s); }
@@ -86,6 +148,8 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
 .elementor-button:focus, .elementor-button:hover, .elementor-button:visited { color: rgb(255, 255, 255); }
 .elementor-button-content-wrapper { display: flex; justify-content: center; }
 .elementor-button-icon { flex-grow: 0; order: 5; }
+.elementor-button-icon svg { width: 1em; height: auto; }
+.elementor-button-icon .e-font-icon-svg { height: 1em; }
 .elementor-button-text { flex-grow: 1; order: 10; display: inline-block; }
 .elementor-button .elementor-align-icon-left { margin-right: 5px; order: 5; }
 .elementor-button span { text-decoration: inherit; }
@@ -95,7 +159,9 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
 }
 .elementor-shape { overflow: hidden; position: absolute; left: 0px; width: 100%; line-height: 0; direction: ltr; }
 .elementor-shape-top { top: -1px; }
+.elementor-shape-top:not([data-negative="false"]) svg { z-index: -1; }
 .elementor-shape-bottom { bottom: -1px; }
+.elementor-shape-bottom:not([data-negative="true"]) svg { z-index: -1; }
 .elementor-shape svg { display: block; width: calc(100% + 1.3px); position: relative; left: 50%; transform: translateX(-50%); }
 .elementor-shape .elementor-shape-fill { fill: rgb(255, 255, 255); transform-origin: center center; transform: rotateY(0deg); }
 #left-area ul.elementor-icon-list-items, .elementor-edit-area .elementor-element ul.elementor-icon-list-items, .elementor .elementor-element ul.elementor-icon-list-items { padding: 0px; }
@@ -105,6 +171,8 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
 }
 @media (min-width: 1025px) and (max-width: 99999px){.elementor .elementor-hidden-desktop { display: none; }
 }
+:is(.elementor .elementor-element.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading .e-n-tab-title, .elementor .elementor-element.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-content .e-n-tab-title):hover { background-color: var(--n-tabs-title-background-color-hover); background-image: none; }
+:is(.elementor .elementor-element.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading .e-n-tab-title, .elementor .elementor-element.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-content .e-n-tab-title).e-active { background-color: var(--n-tabs-title-background-color-active); background-image: none; }
 @font-face { font-family: swiper-icons; src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA"); font-weight: 400; font-style: normal; }
 :root { --swiper-theme-color: #007aff; }
 :root { --swiper-navigation-size: 44px; }
@@ -112,13 +180,10 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-.elementor-kit-472 { --e-global-color-primary: #F58233; --e-global-color-secondary: #3489BC; --e-global-color-text: #1C1C1A; --e-global-color-accent: #CDDC28; --e-global-color-792e6bf7: #72A447; --e-global-color-611ff84: #3489BC; --e-global-color-7cdbae11: #000000; --e-global-color-11482381: #FFFFFF; --e-global-color-21376f5: #F4F4F4; --e-global-color-8c7e29e: #1C1C1AC2; --e-global-color-9b44e61: #121c27; --e-global-color-e44ed54: #22597B; --e-global-typography-primary-font-family: "Montserrat"; --e-global-typography-primary-font-weight: 600; --e-global-typography-secondary-font-family: "Montserrat"; --e-global-typography-secondary-font-weight: 400; --e-global-typography-text-font-family: "Montserrat"; --e-global-typography-text-font-size: 16px; --e-global-typography-text-font-weight: 400; --e-global-typography-text-line-height: 1.4em; --e-global-typography-accent-font-family: "Montserrat"; --e-global-typography-accent-font-size: 20px; --e-global-typography-accent-font-weight: 400; --e-global-typography-accent-line-height: 1.4em; --e-global-typography-3cd8af6-font-family: "Montserrat"; --e-global-typography-3cd8af6-font-size: 57px; --e-global-typography-3cd8af6-font-weight: 700; --e-global-typography-3cd8af6-text-transform: uppercase; --e-global-typography-3cd8af6-line-height: 1em; --e-global-typography-99e442d-font-family: "Montserrat"; --e-global-typography-99e442d-font-size: 57px; --e-global-typography-99e442d-font-weight: 700; --e-global-typography-99e442d-text-transform: uppercase; --e-global-typography-99e442d-line-height: 1em; --e-global-typography-5a8dd96-font-family: "Montserrat"; --e-global-typography-5a8dd96-font-size: 37px; --e-global-typography-5a8dd96-font-weight: 700; --e-global-typography-5a8dd96-text-transform: uppercase; --e-global-typography-5a8dd96-line-height: 1em; --e-global-typography-27b5eee-font-size: 20px; --e-global-typography-27b5eee-font-weight: 600; --e-global-typography-27b5eee-text-transform: uppercase; --e-global-typography-27b5eee-line-height: 1.5em; --e-global-typography-1e4b65b-font-family: "Montserrat"; --e-global-typography-1e4b65b-font-size: 22px; --e-global-typography-1e4b65b-font-weight: 400; --e-global-typography-1e4b65b-line-height: 1.3em; --e-global-typography-7da3da7-font-family: "Montserrat"; --e-global-typography-7da3da7-font-size: 22px; --e-global-typography-7da3da7-font-weight: 400; --e-global-typography-7da3da7-line-height: 1.3em; --e-global-typography-8a5d0cf-font-family: "Montserrat"; --e-global-typography-8a5d0cf-font-size: 17px; --e-global-typography-8a5d0cf-font-weight: 400; --e-global-typography-8a5d0cf-line-height: 1.7em; --e-global-typography-b8b98d3-font-family: "Montserrat"; --e-global-typography-b8b98d3-font-size: 14px; --e-global-typography-b8b98d3-font-weight: 400; --e-global-typography-b8b98d3-line-height: 1.4em; --e-global-typography-6be48b5-font-family: "Montserrat"; --e-global-typography-6be48b5-font-size: 36px; --e-global-typography-6be48b5-font-weight: 400; --e-global-typography-6be48b5-line-height: 1.4em; --e-global-typography-576c7ab-font-family: "Montserrat"; --e-global-typography-576c7ab-font-size: 24px; --e-global-typography-576c7ab-font-weight: 400; --e-global-typography-576c7ab-line-height: 1.4em; font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-size: var( --e-global-typography-text-font-size ); font-weight: var( --e-global-typography-text-font-weight ); line-height: var( --e-global-typography-text-line-height ); }
 .e-con { --container-max-width: 1140px; }
-@media (max-width: 1024px){.elementor-kit-472 { --e-global-typography-27b5eee-font-size: 16px; font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
-.e-con { --container-max-width: 1024px; }
+@media (max-width: 1024px){.e-con { --container-max-width: 1024px; }
 }
-@media (max-width: 767px){.elementor-kit-472 { --e-global-typography-99e442d-font-size: 30px; --e-global-typography-1e4b65b-font-size: 18px; font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
-.e-con { --container-max-width: 767px; }
+@media (max-width: 767px){.e-con { --container-max-width: 767px; }
 }
 .fa, .fab, .fad, .fal, .far, .fas { -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
 @-webkit-keyframes fa-spin { 
@@ -129,7 +194,6 @@ html:not(.fl-builder-edit), body:not(.fl-builder-edit) { position: relative; }
   0% { transform: rotate(0deg); }
   100% { transform: rotate(1turn); }
 }
-.sr-only { border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
 @font-face { font-family: "Font Awesome 5 Brands"; font-style: normal; font-weight: 400; font-display: block; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf) format("truetype"); }
 @font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 400; font-display: block; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"); }
 @font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900; font-display: block; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"); }
@@ -286,18 +350,43 @@ body.elementor-page-1869:not(.elementor-motion-effects-element-type-background),
 .elementor-1869 .elementor-element.elementor-element-9b32eb5 .elementor-button { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
 }
 @media (max-width: 767px){.elementor-1869 .elementor-element.elementor-element-00edbf2 { --padding-top: 20px; --padding-right: 20px; --padding-bottom: 49px; --padding-left: 20px; }
+.elementor-1869 .elementor-element.elementor-element-96c94c6 { --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
+.elementor-1869 .elementor-element.elementor-element-957908e .elementor-heading-title { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
 .elementor-1869 .elementor-element.elementor-element-d9a0abd .elementor-heading-title { font-size: 32px; }
+.elementor-1869 .elementor-element.elementor-element-9f2acb8 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-d4f9eaf .elementor-heading-title { font-size: var( --e-global-typography-576c7ab-font-size ); line-height: var( --e-global-typography-576c7ab-line-height ); letter-spacing: var( --e-global-typography-576c7ab-letter-spacing ); word-spacing: var( --e-global-typography-576c7ab-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-3ad53ac { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-27b1f14 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-767c18e .elementor-heading-title { font-size: var( --e-global-typography-1e4b65b-font-size ); line-height: var( --e-global-typography-1e4b65b-line-height ); letter-spacing: var( --e-global-typography-1e4b65b-letter-spacing ); word-spacing: var( --e-global-typography-1e4b65b-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-22c8db9 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
 .elementor-1869 .elementor-element.elementor-element-e513c96 { --padding-top: 40px; --padding-right: 20px; --padding-bottom: 40px; --padding-left: 20px; }
+.elementor-1869 .elementor-element.elementor-element-6fbee14 { --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
 .elementor-1869 .elementor-element.elementor-element-1b0e532 .elementor-heading-title { font-size: 28px; }
+.elementor-1869 .elementor-element.elementor-element-ce795fd { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-de556c7 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-9069fa6 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
 .elementor-1869 .elementor-element.elementor-element-b465a56 { --padding-top: 40px; --padding-right: 20px; --padding-bottom: 40px; --padding-left: 20px; }
 .elementor-1869 .elementor-element.elementor-element-e1755d3 .elementor-heading-title { font-size: 28px; }
+.elementor-1869 .elementor-element.elementor-element-11a3404 .elementor-heading-title { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-bded824 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-b270621 .elementor-heading-title { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-7d2e154 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-b00c6e9 .elementor-heading-title { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-6d88064 { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-4cfba0ca { --padding-top: 40px; --padding-right: 20px; --padding-bottom: 40px; --padding-left: 20px; }
+.elementor-1869 .elementor-element.elementor-element-6cdc2aae { --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
 .elementor-1869 .elementor-element.elementor-element-37e9a3bd .elementor-heading-title { font-size: 28px; }
+.elementor-1869 .elementor-element.elementor-element-5641b09 .elementor-heading-title { font-size: var( --e-global-typography-accent-font-size ); line-height: var( --e-global-typography-accent-line-height ); }
 .elementor-1869 .elementor-element.elementor-element-1782f8f7 { --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
 .elementor-1869 .elementor-element.elementor-element-206e89b9 .elementor-heading-title { font-size: 14px; }
 .elementor-1869 .elementor-element.elementor-element-206e89b9 > .elementor-widget-container { margin: 0px; padding: 20px 0px 0px; }
 .elementor-1869 .elementor-element.elementor-element-d4d72da { font-size: 14px; line-height: 1.2em; }
 .elementor-1869 .elementor-element.elementor-element-abf436b { --padding-top: 40px; --padding-right: 20px; --padding-bottom: 40px; --padding-left: 20px; }
 .elementor-1869 .elementor-element.elementor-element-4379644 .elementor-heading-title { font-size: 28px; }
+.elementor-1869 .elementor-element.elementor-element-7540efa { font-size: var( --e-global-typography-text-font-size ); line-height: var( --e-global-typography-text-line-height ); }
+.elementor-1869 .elementor-element.elementor-element-18348ce .elementor-button { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
+.elementor-1869 .elementor-element.elementor-element-9b32eb5 .elementor-button { font-size: var( --e-global-typography-27b5eee-font-size ); line-height: var( --e-global-typography-27b5eee-line-height ); letter-spacing: var( --e-global-typography-27b5eee-letter-spacing ); word-spacing: var( --e-global-typography-27b5eee-word-spacing ); }
+}
 @media (min-width: 768px){.elementor-1869 .elementor-element.elementor-element-00edbf2 { --content-width: 1140px; }
 .elementor-1869 .elementor-element.elementor-element-e513c96 { --content-width: 1140px; }
 .elementor-1869 .elementor-element.elementor-element-b465a56 { --content-width: 1140px; }
@@ -308,6 +397,7 @@ body.elementor-page-1869:not(.elementor-motion-effects-element-type-background),
 }
 @media (max-width: 1024px) and (min-width: 768px){.elementor-1869 .elementor-element.elementor-element-96c94c6 { --width: 100%; }
 .elementor-1869 .elementor-element.elementor-element-6fbee14 { --width: 100%; }
+.elementor-1869 .elementor-element.elementor-element-4cfba0ca { --content-width: 1140px; }
 .elementor-1869 .elementor-element.elementor-element-6cdc2aae { --width: 50%; }
 .elementor-1869 .elementor-element.elementor-element-1782f8f7 { --width: 50%; }
 }
@@ -321,6 +411,17 @@ body.elementor-page-1869:not(.elementor-motion-effects-element-type-background),
   100% { transform: scale(1.5); opacity: 0; }
 }
 @font-face { font-family: FontAwesome; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"); font-weight: normal; font-style: normal; }
+.fa { display: inline-block; font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; line-height: 1; font-family: FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; }
+@-webkit-keyframes fa-spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+@keyframes fa-spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+.fa-map-o::before { content: ""; }
+.fa-envelope-open-o::before { content: ""; }
 .elementor-widget .elementor-icon-list-items { list-style-type: none; margin: 0px; padding: 0px; }
 .elementor-widget .elementor-icon-list-item { margin: 0px; padding: 0px; position: relative; }
 .elementor-widget .elementor-icon-list-item::after { position: absolute; bottom: 0px; width: 100%; }
@@ -350,6 +451,7 @@ body.elementor-page-1869:not(.elementor-motion-effects-element-type-background),
 @media (max-width: 767px){.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item::after { left: 0px; }
 .elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item::after { right: 0px; }
 }
+@font-face { font-family: "Font Awesome 5 Brands"; font-style: normal; font-weight: 400; font-display: block; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf) format("truetype"); }
 .fa, .fas, .far, .fal, .fad, .fab { -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
 @-webkit-keyframes fa-spin { 
   0% { transform: rotate(0deg); }
@@ -359,6 +461,7 @@ body.elementor-page-1869:not(.elementor-motion-effects-element-type-background),
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900; font-display: block; src: url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff) format("woff"), url(https://www.intactix.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"); }
 .fa, .fas { font-family: "Font Awesome 5 Free"; font-weight: 900; }
 html { font-family: sans-serif; text-size-adjust: 100%; }
 body { margin: 0px; }
@@ -369,10 +472,6 @@ b, strong { font-weight: 700; }
 h1 { font-size: 2em; margin: 0.67em 0px; }
 img { border: 0px; }
 svg:not(:root) { overflow: hidden; }
-button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
-button { overflow: visible; }
-button, select { text-transform: none; }
-button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
 @media print{* { text-shadow: none !important; color: rgb(0, 0, 0) !important; background: transparent !important; box-shadow: none !important; }
 a, a:visited { text-decoration: underline; }
 a[href]::after { content: " (" attr(href) ")"; }
@@ -380,18 +479,15 @@ tr, img { break-inside: avoid; }
 img { max-width: 100% !important; }
 p, h2, h3 { orphans: 3; widows: 3; }
 h2, h3 { break-after: avoid; }
-.navbar { display: none; }
 }
 * { box-sizing: border-box; }
 ::before, ::after { box-sizing: border-box; }
 html { font-size: 62.5%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
-input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 a { color: rgb(66, 139, 202); text-decoration: none; }
 a:hover, a:focus { color: rgb(42, 100, 150); text-decoration: underline; }
 a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 img { vertical-align: middle; }
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
 h1, .h1 { font-size: 36px; }
@@ -417,46 +513,6 @@ ul, ol { margin-top: 0px; margin-bottom: 10px; }
 .col-md-12 { width: 100%; }
 .col-md-4 { width: 33.3333%; }
 }
-.collapse { display: none; }
-.nav { margin-bottom: 0px; padding-left: 0px; list-style: none; }
-.nav > li { position: relative; display: block; }
-.nav > li > a { position: relative; display: block; padding: 10px 15px; }
-.nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: rgb(238, 238, 238); }
-.navbar { position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; }
-@media (min-width: 768px){.navbar { border-radius: 4px; }
-}
-@media (min-width: 768px){.navbar-header { float: left; }
-}
-.navbar-collapse { max-height: 340px; overflow-x: visible; padding-right: 15px; padding-left: 15px; border-top: 1px solid transparent; box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px inset; }
-@media (min-width: 768px){.navbar-collapse { width: auto; border-top: 0px; box-shadow: none; }
-.navbar-collapse.collapse { padding-bottom: 0px; display: block !important; height: auto !important; overflow: visible !important; }
-.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { padding-left: 0px; padding-right: 0px; }
-}
-.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse { margin-right: -15px; margin-left: -15px; }
-@media (min-width: 768px){.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse { margin-right: 0px; margin-left: 0px; }
-}
-.navbar-static-top { z-index: 1000; border-width: 0px 0px 1px; }
-@media (min-width: 768px){.navbar-static-top { border-radius: 0px; }
-}
-.navbar-toggle { position: relative; float: right; margin-right: 15px; padding: 9px 10px; margin-top: 8px; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; }
-.navbar-toggle:focus { outline: 0px; }
-.navbar-toggle .icon-bar { display: block; width: 22px; height: 2px; border-radius: 1px; }
-.navbar-toggle .icon-bar + .icon-bar { margin-top: 4px; }
-@media (min-width: 768px){.navbar-toggle { display: none; }
-}
-.navbar-nav { margin: 7.5px -15px; }
-.navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; line-height: 20px; }
-@media (min-width: 768px){.navbar-nav { float: left; margin: 0px; }
-.navbar-nav > li { float: left; }
-.navbar-nav > li > a { padding-top: 15px; padding-bottom: 15px; }
-}
-.navbar-default { background-color: rgb(248, 248, 248); border-color: rgb(231, 231, 231); }
-.navbar-default .navbar-nav > li > a { color: rgb(119, 119, 119); }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { color: rgb(51, 51, 51); background-color: transparent; }
-.navbar-default .navbar-toggle { border-color: rgb(221, 221, 221); }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: rgb(221, 221, 221); }
-.navbar-default .navbar-toggle .icon-bar { background-color: rgb(136, 136, 136); }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: rgb(231, 231, 231); }
 @-webkit-keyframes progress-bar-stripes { 
   0% { background-position: 40px 0px; }
   100% { background-position: 0px 0px; }
@@ -472,17 +528,6 @@ html { font-size: 100%; overflow-x: hidden; }
 body { background: rgb(255, 255, 255); font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(92, 92, 92); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 @font-face { font-family: themovation-icons; src: url(https://www.intactix.ca/wp-content/themes/stratusx/assets/fonts/themovation-icons.woff) format("woff"), url(https://www.intactix.ca/wp-content/themes/stratusx/assets/fonts/themovation-icons.ttf) format("truetype"); font-weight: normal; font-style: normal; }
 img { max-width: 100%; height: auto; }
-.banner { z-index: 20; }
-.navbar { background-color: rgb(255, 255, 255); margin-bottom: 0px; }
-.banner #logo { float: left; display: block; margin: 25px 0px; }
-.navbar .navbar-nav { float: right; text-align: right; margin: 12px 0px 0px; }
-.navbar .navbar-nav > li > a { position: relative; color: rgb(93, 93, 93); font-size: 15px; font-weight: 400; padding: 15px 0px; margin: 0px 15px; transition: 0.1s linear; }
-.navbar .navbar-nav > li > a::after { position: absolute; bottom: 12px; left: 0px; content: ""; width: 0px; height: 1px; background-color: rgb(255, 255, 255); transition: 0.2s linear; }
-.navbar .navbar-nav > li > a:hover { color: rgb(93, 93, 93); }
-.navbar .navbar-nav > li > a:hover::after, .navbar .navbar-nav > li.active > a::after, .navbar .navbar-nav > li.active > a:hover::after, .navbar .navbar-nav > li.active > a:focus::after { width: 100%; height: 1px; background-color: rgb(58, 59, 116); }
-.navbar-nav > li + li { margin-left: 2px; }
-.navbar-collapse { max-height: none; }
-.navbar-collapse ul { margin-bottom: 10px; }
 body.blog .page-title, body.single .page-title, body.search .page-title, body.archive .page-title, body.error404 .page-title { border-bottom: 1px solid rgb(230, 230, 230); }
 body.page .comment-respond { margin-bottom: 75px; }
 body.page #respond, body.page #comments { border-top: 1px solid rgb(226, 226, 226); }
@@ -493,6 +538,10 @@ body.page #comments { margin-bottom: 70px; }
 .inner-container > .content-editor { width: calc(100% - 30px); max-width: 1170px; margin: 0px auto; padding: 40px 15px; }
 body.elementor-page .inner-container > .content-editor, body.elementor-editor-active .inner-container > .content-editor, body.elementor-editor-preview .inner-container > .content-editor { max-width: none; margin: 0px; padding: 0px; width: auto !important; }
 @-webkit-keyframes spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin { 
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
@@ -513,8 +562,6 @@ h2 { font-size: 30px; }
 h3 { font-size: 27px; }
 }
 a:focus, .button:focus, .btn:focus { outline: none; }
-.navbar-toggle { border: 0px; padding: 10px 0px; }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: transparent; }
 .th-no-sidebar > .standard-blog .container, body:not(.elementor-page):not(.elementor-editor-active):not(.elementor-editor-preview) .th-no-sidebar .container, body:not(.elementor-page):not(.elementor-editor-active):not(.elementor-editor-preview) .th-no-sidebar > .content-editor { max-width: 830px !important; margin: 0px auto !important; }
 body.elementor-page .th-pagination { display: none; }
 body.single .post-inner { padding-bottom: 50px; border-bottom: 1px solid rgb(222, 222, 222); }
@@ -676,14 +723,6 @@ body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .times
 .footer .footer-copyright { text-align: center; }
 .footer .widget-title { position: relative; font-size: 18px; font-weight: 400; margin-top: 0px; padding-bottom: 20px; margin-bottom: 26px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 .footer .icon-blocks p { font-size: 15px; }
-.headhesive--clone { width: 100%; top: 0px; left: 0px; z-index: 120; box-shadow: none; transform: translateY(-100%); transition: transform 0.2s ease-in-out; position: fixed !important; background-color: rgb(255, 255, 255) !important; }
-.headhesive--clone #logo { margin-top: 16px; margin-bottom: 16px; }
-.headhesive--clone #logo img { max-height: 30px !important; width: auto; }
-.headhesive--clone #logo .logo-main { display: inline !important; }
-.headhesive--clone .navbar-nav { margin-top: 5px !important; }
-.headhesive--clone .navbar-toggle { top: 6px !important; }
-.headhesive--clone .navbar-nav > li > a { color: rgb(93, 93, 93); }
-.headhesive--clone .navbar-nav > li > a:hover::after, .headhesive--clone .navbar-nav > li.active > a::after, .headhesive--clone .navbar-nav > li.active > a:hover::after, .headhesive--clone .navbar-nav > li.active > a:focus::after { bottom: 12px; background-color: rgb(4, 80, 137); }
 @-webkit-keyframes fadeInDown { 
   0% { opacity: 0; transform: translate3d(0px, -40%, 0px); }
   100% { opacity: 1; transform: none; }
@@ -748,30 +787,12 @@ body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .times
   0% { transform: translate3d(0px, 40%, 0px); visibility: visible; }
   100% { transform: translate3d(0px, 0px, 0px); }
 }
-header.dark-header { background-color: rgb(37, 43, 45); border-color: transparent transparent currentcolor; border-bottom-width: 0px; border-bottom-style: none; }
-.headhesive--clone.dark-header { background-color: rgb(37, 43, 45) !important; }
-header.dark-header .navbar-nav > li > a, header.dark-header .navbar-nav > li > a:hover, .headhesive--clone.dark-header .navbar-nav > li > a, .headhesive--clone.dark-header .navbar-nav > li > a:hover { color: rgb(255, 255, 255) !important; }
-header.dark-header .navbar-nav > li > a:hover::after, header.dark-header .navbar-nav > li.active > a::after, header.dark-header .navbar-nav > li.active > a:hover::after { background-color: rgb(255, 255, 255) !important; }
-header.dark-header .navbar-collapse { box-shadow: none; }
-@media (max-width: 767px){header.dark-header .navbar-nav { border-color: rgba(255, 255, 255, 0.1) !important; }
-header.dark-header .navbar-toggle .icon-bar { background-color: rgb(172, 172, 172); }
+@media (max-width: 1024px){.hfe-nav-menu__breakpoint-tablet .hfe-nav-menu__toggle:not(.hfe-active-menu) + nav ul.hfe-nav-menu { display: none; }
 }
-@media (max-width: 767px){.navbar-nav > li + li { margin-left: 0px; }
-}
-@media (max-width: 479px){.banner #logo { max-width: 230px; }
-}
-@media (min-width: 480px) and (max-width: 767px){.banner #logo { max-width: 310px; }
-}
-@media (max-width: 767px){.banner #logo { margin-left: 15px; }
-.navbar-default .navbar-collapse { border: 0px; }
-.navbar .navbar-nav { float: none; text-align: left; margin: 0px 0px 10px; padding-top: 15px; border-top: 1px solid rgb(231, 231, 231) !important; }
-.navbar .navbar-nav > li > a { padding: 10px 15px; margin-left: 0px; margin-right: 0px; }
-.navbar .navbar-nav > li > a::after, .navbar .navbar-nav > li > a:hover::after { height: 0px !important; }
-.footer-widgets.row { margin-bottom: 20px; padding-bottom: 10px; }
+.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); height: 1px; width: 1px; overflow: hidden; position: absolute !important; }
+@media (max-width: 767px){.footer-widgets.row { margin-bottom: 20px; padding-bottom: 10px; }
 .footer .widget { margin-bottom: 50px; }
 .footer .widget-title { margin-bottom: 18px; }
-}
-@media (min-width: 768px) and (max-width: 991px){.navbar .navbar-nav > li > a { margin-left: 12px; margin-right: 12px; }
 }
 @media (max-width: 991px){.icon-block { margin-bottom: 50px; }
 .icon-block:last-child { margin-bottom: 0px; }
@@ -782,15 +803,47 @@ header.dark-header .navbar-toggle .icon-bar { background-color: rgb(172, 172, 17
 @media (min-width: 783px){body.admin-bar .headhesive--stick, body.admin-bar .banner[data-transparent-header="true"] { top: 32px; }
 }
 body[class*="groovy_menu"] .banner[data-transparent-header="true"]:not(.headhesive--stick) { top: 0px; }
+.elementor-1970 .elementor-element.elementor-element-69cb555a { --flex-direction: row; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: 100%; --container-widget-flex-grow: 1; --container-widget-align-self: stretch; --justify-content: space-between; --align-items: center; --gap: 0px; --background-transition: 0.3s; --margin-top: 0px; --margin-right: 0px; --margin-bottom: 0px; --margin-left: 0px; --padding-top: 0px; --padding-right: 20px; --padding-bottom: 0px; --padding-left: 20px; }
+.elementor-1970 .elementor-element.elementor-element-69cb555a:not(.elementor-motion-effects-element-type-background), .elementor-1970 .elementor-element.elementor-element-69cb555a > .elementor-motion-effects-container > .elementor-motion-effects-layer { background-color: var( --e-global-color-9b44e61 ); }
+.elementor-1970 .elementor-element.elementor-element-69cb555a, .elementor-1970 .elementor-element.elementor-element-69cb555a::before { --border-transition: 0.3s; }
+.elementor-1970 .elementor-element.elementor-element-66c96cb2 { --flex-direction: row; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: 100%; --container-widget-flex-grow: 1; --container-widget-align-self: stretch; --justify-content: flex-start; --align-items: center; --background-transition: 0.3s; --margin-top: 0px; --margin-right: 0px; --margin-bottom: 0px; --margin-left: 0px; --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
+.elementor-1970 .elementor-element.elementor-element-3ae7bb9d { text-align: center; }
+.elementor-1970 .elementor-element.elementor-element-69f3bbb3 { --flex-direction: row; --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% ); --container-widget-height: 100%; --container-widget-flex-grow: 1; --container-widget-align-self: stretch; --justify-content: flex-end; --align-items: center; --background-transition: 0.3s; }
+.elementor-1970 .elementor-element.elementor-element-69f3bbb3, .elementor-1970 .elementor-element.elementor-element-69f3bbb3::before { --border-transition: 0.3s; }
+.elementor-1970 .elementor-element.elementor-element-5247c1e .hfe-nav-menu__toggle { margin: 0px auto; }
+.elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-menu-item { padding-left: 15px; padding-right: 15px; }
+.elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-sub-menu-item { padding-top: 15px; padding-bottom: 15px; }
+.elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-menu-item:hover, .elementor-1970 .elementor-element.elementor-element-5247c1e .sub-menu a.hfe-sub-menu-item:hover, .elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item.current-menu-item a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-menu-item.highlighted, .elementor-1970 .elementor-element.elementor-element-5247c1e .menu-item a.hfe-menu-item:focus { color: var( --e-global-color-11482381 ); }
+.elementor-1970 .elementor-element.elementor-element-5809e6e6 .elementor-button .elementor-align-icon-left { margin-right: 10px; }
+.elementor-1970 .elementor-element.elementor-element-5809e6e6 .elementor-button { background-color: var( --e-global-color-primary ); border-radius: 8px; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 .hfe-nav-menu__toggle, .elementor-1970 .elementor-element.elementor-element-b8bf498 .hfe-nav-menu-icon { margin-left: auto; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 li.menu-item a { justify-content: center; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 .sub-menu, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown .menu-item a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown .menu-item a.hfe-sub-menu-item { background-color: var( --e-global-color-11482381 ); }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-nav-menu__layout-horizontal .sub-menu, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav:not(.hfe-nav-menu__layout-horizontal) .sub-menu.sub-menu-open, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown .hfe-nav-menu, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible .hfe-nav-menu { border-style: solid; border-width: 1px; border-color: rgb(196, 196, 196); }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 .sub-menu li a.hfe-sub-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown li a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible li a.hfe-menu-item { padding-left: 20px; padding-right: 20px; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 .sub-menu a.hfe-sub-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown li a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown li a.hfe-sub-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible li a.hfe-menu-item, .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible li a.hfe-sub-menu-item { padding-top: 13px; padding-bottom: 13px; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 .sub-menu li.menu-item:not(:last-child), .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown li.menu-item:not(:last-child), .elementor-1970 .elementor-element.elementor-element-b8bf498 nav.hfe-dropdown-expandible li.menu-item:not(:last-child) { border-bottom: 1px solid rgb(196, 196, 196); }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 div.hfe-nav-menu-icon { color: var( --e-global-color-11482381 ); }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 div.hfe-nav-menu-icon svg { fill: var( --e-global-color-11482381 ); }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 > .elementor-widget-container { margin: 0px; padding: 0px; }
+.elementor-1970 .elementor-element.elementor-element-b8bf498 { width: var( --container-widget-width, 40px ); max-width: 40px; --container-widget-width: 40px; --container-widget-flex-grow: 0; }
 body.elementor-page-1970 { margin: 0px; padding: 0px; }
+@media (min-width: 768px){.elementor-1970 .elementor-element.elementor-element-66c96cb2 { --width: 10%; }
+}
+@media (max-width: 1024px){.elementor-1970 .elementor-element.elementor-element-69cb555a { --padding-top: 0px; --padding-right: 20px; --padding-bottom: 0px; --padding-left: 20px; }
+.elementor-1970 .elementor-element.elementor-element-3ae7bb9d img { max-width: 100px; }
+}
+@media (max-width: 767px){.elementor-1970 .elementor-element.elementor-element-69cb555a { --padding-top: 010px; --padding-right: 10px; --padding-bottom: 010px; --padding-left: 10px; }
+.elementor-1970 .elementor-element.elementor-element-66c96cb2 { --width: 25%; }
+.elementor-1970 .elementor-element.elementor-element-3ae7bb9d { width: auto; }
+.elementor-1970 .elementor-element.elementor-element-69f3bbb3 { --width: 75%; }
+}
+@media (max-width: 1024px) and (min-width: 768px){.elementor-1970 .elementor-element.elementor-element-69cb555a { --content-width: 100%; }
+.elementor-1970 .elementor-element.elementor-element-66c96cb2 { --width: 25%; }
+}
 .footer .footer-copyright { text-align: left; }
 .footer_credit { text-align: center; font-size: 12px; font-weight: 600; color: orange; }
 .footer_copy { font-size: 12px; }
-#logo img { max-height: 25px; width: auto; }
-.navbar .navbar-nav { margin-top: 15px; }
-.navbar .navbar-toggle { top: 15px; }
-.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover, .navbar .navbar-nav > li.active > a:focus, .banner[data-transparent-header="true"].headhesive--clone .navbar-nav > li > a, .navbar .navbar-nav > li.th-accent { font-family: Montserrat; font-size: 15px; font-weight: 400; color: rgb(25, 25, 25); }
-.btn-cta-primary, .navbar .navbar-nav > li > a:hover::after, .navbar .navbar-nav > li.active > a::after, .navbar .navbar-nav > li.active > a:hover::after, .navbar .navbar-nav > li.active > a:focus::after, .headhesive--clone .navbar-nav > li > a:hover::after, .banner[data-transparent-header="true"].headhesive--clone .navbar-nav > li > a:hover::after, form input[type="submit"], html .woocommerce a.button.alt, html .woocommerce-page a.button.alt, html .woocommerce a.button, html .woocommerce-page a.button, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce #respond input#submit.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit:disabled[disabled]:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:disabled:hover, .woocommerce a.button:disabled[disabled]:hover, .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover, .woocommerce input.button.disabled:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover, p.demo_store, .woocommerce.widget_price_filter .ui-slider .ui-slider-handle, .th-conversion form input[type="submit"], .th-conversion .with_frm_style input[type="submit"], .th-pricing-column.th-highlight, .search-submit, .search-submit:hover, .widget .tagcloud a:hover, .footer .tagcloud a:hover, .btn-standard-primary-form form .frm_submit input[type="submit"], .btn-standard-primary-form form .frm_submit input[type="submit"]:hover, .btn-ghost-primary-form form .frm_submit input[type="submit"]:hover, .btn-cta-primary-form form .frm_submit input[type="submit"], .btn-cta-primary-form form .frm_submit input[type="submit"]:hover, .th-widget-area form input[type="submit"], .th-widget-area .with_frm_style .frm_submit input[type="submit"], .elementor-widget-themo-header.elementor-view-stacked .th-header-wrap .elementor-icon, .elementor-widget-themo-service-block.elementor-view-stacked .th-service-block-w .elementor-icon { background-color: rgb(245, 130, 51); }
 a, .accent, .navbar .navbar-nav .dropdown-menu li.active a, .navbar .navbar-nav .dropdown-menu li a:hover, .navbar .navbar-nav .dropdown-menu li.active a:hover, .page-title h1, .inner-container > h1.entry-title, .woocommerce ul.products li.product .price, .woocommerce ul.products li.product .price del, .woocommerce .single-product .product .price, .woocommerce.single-product .product .price, .woocommerce .single-product .product .price ins, .woocommerce.single-product .product .price ins, .a2c-ghost.woocommerce a.button, .th-cta .th-cta-text span, .elementor-widget-themo-info-card .th-info-card-wrap .elementor-icon-box-title, .map-info h3, .th-pkg-content h3, .th-pricing-cost, #main-flex-slider .slides h1, .th-team-member-social a i:hover, .elementor-widget-toggle .elementor-toggle .elementor-toggle-title, .elementor-widget-toggle .elementor-toggle .elementor-toggle-title.active, .elementor-widget-toggle .elementor-toggle .elementor-toggle-icon, .elementor-widget-themo-header .th-header-wrap .elementor-icon, .elementor-widget-themo-header.elementor-view-default .th-header-wrap .elementor-icon, .elementor-widget-themo-service-block .th-service-block-w .elementor-icon, .elementor-widget-themo-service-block.elementor-view-default .th-service-block-w .elementor-icon, .elementor-widget-themo-header.elementor-view-framed .th-header-wrap .elementor-icon, .elementor-widget-themo-service-block.elementor-view-framed .th-service-block-w .elementor-icon { color: rgb(245, 130, 51); }
 body #booked-profile-page input[type="submit"].button-primary, body table.booked-calendar input[type="submit"].button-primary, body .booked-modal input[type="submit"].button-primary, body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button, body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block { background: rgb(52, 137, 188) !important; }
 body #booked-profile-page input[type="submit"].button-primary, body table.booked-calendar input[type="submit"].button-primary, body .booked-modal input[type="submit"].button-primary, body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button, .btn-standard-accent-form form .frm_submit input[type="submit"], .btn-standard-accent-form form .frm_submit input[type="submit"]:hover, .btn-ghost-accent-form form .frm_submit input[type="submit"]:hover, .btn-ghost-accent-form form .frm_submit input[type="submit"] { border-color: rgb(52, 137, 188) !important; }
@@ -912,6 +965,10 @@ body { background-color: rgb(255, 255, 255); }
   75% { transform: translate3d(0px, 10px, 0px); }
   90% { transform: translate3d(0px, -5px, 0px); }
   100% { transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeIn { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .fadeIn { animation-name: fadeIn; }
 @keyframes fadeInDown { 
@@ -1109,6 +1166,8 @@ body > rs-modal-cover { position: fixed; z-index: 9999995 !important; }
   50% { opacity: 0; top: 70%; }
   100% { opacity: 0; top: 29%; }
 }
+.rev-scroll-btn > :hover, .rev-scroll-btn > :focus, .rev-scroll-btn > .active { color: rgb(255, 255, 255); }
+.rev-scroll-btn > :hover, .rev-scroll-btn > :focus, .rev-scroll-btn > :active, .rev-scroll-btn > .active { opacity: 0.8; }
 @keyframes tp-rotateplane { 
   0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
   50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
@@ -1260,412 +1319,489 @@ body.rtl .rs-pzimg { left: 0px !important; }
   100% { transform: rotate(-360deg); }
 }
 .elementor-widget-image { text-align: center; }
+.elementor-widget-image a { display: inline-block; }
 .elementor-widget-image img { vertical-align: middle; display: inline-block; }
 .elementor-heading-title { padding: 0px; margin: 0px; line-height: 1; }
+.elementor-widget .elementor-icon-list-items { list-style-type: none; margin: 0px; padding: 0px; }
+.elementor-widget .elementor-icon-list-item { margin: 0px; padding: 0px; position: relative; }
+.elementor-widget .elementor-icon-list-item::after { position: absolute; bottom: 0px; width: 100%; }
+.elementor-widget .elementor-icon-list-item, .elementor-widget .elementor-icon-list-item a { display: flex; align-items: center; font-size: inherit; }
+.elementor-widget .elementor-icon-list-icon + .elementor-icon-list-text { align-self: center; padding-left: 5px; }
+.elementor-widget .elementor-icon-list-icon { display: flex; }
+.elementor-widget .elementor-icon-list-icon svg { width: var(--e-icon-list-icon-size,1em); height: var(--e-icon-list-icon-size,1em); }
+.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon { text-align: var(--e-icon-list-icon-align); }
+.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg { margin: var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0); }
+.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item::after { right: 0px; }
+@media (min-width: -1px){.elementor-widget:not(.elementor-widescreen-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-widescreen-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
+@media (max-width: -1px){.elementor-widget:not(.elementor-laptop-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-laptop-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
+@media (max-width: -1px){.elementor-widget:not(.elementor-tablet_extra-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-tablet_extra-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
+@media (max-width: 1024px){.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
+@media (max-width: -1px){.elementor-widget:not(.elementor-mobile_extra-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-mobile_extra-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
+@media (max-width: 767px){.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item::after { left: 0px; }
+.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item::after { right: 0px; }
+}
 body.elementor-page .elementor-widget-menu-anchor { margin-bottom: 0px; }
 .image-mapper-shape { fill: rgba(0, 0, 0, 0); }
 g:hover .image-mapper-shape { stroke: white; stroke-width: 2px; opacity: 0.2; }
 </style><style>
-.xd-video{margin:8px auto 40px;padding:24px;border-radius:24px;background:#fff7f0;border:1px solid #ffdcc2;max-width:1100px;box-sizing:border-box}
-.xd-label{display:inline-flex;align-items:center;gap:8px;font:600 13px/1 Montserrat,system-ui,sans-serif;color:#c9611a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.xd-video{margin:8px auto 40px;padding:24px;border-radius:24px;background:#fff7f1;border:1px solid #fbdcc5;max-width:1100px;box-sizing:border-box;text-align:left}
+.xd-label{display:inline-flex;align-items:center;gap:8px;font:600 13px/1 Montserrat, sans-serif;color:#c9611a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
 .xd-dot{width:8px;height:8px;border-radius:50%;background:#f58233}
-.xd-title{font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:24px;line-height:1.3;color:#202020;margin:0 0 8px}
-.xd-sub{font-family:Montserrat,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#646464;margin:0 0 18px}
+.xd-title{font-family:Montserrat, sans-serif;font-weight:700;font-size:24px;line-height:1.3;color:#202020;margin:0 0 8px;text-transform:none;letter-spacing:normal}
+.xd-sub{font-family:Montserrat, sans-serif;font-size:17px;line-height:1.55;color:#5a5a5a;margin:0 0 18px}
 .xd-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#111;box-shadow:0 8px 24px rgba(0,0,0,.08)}
 .xd-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 @media (max-width:600px){.xd-video{padding:16px;border-radius:16px}.xd-title{font-size:20px}}
-</style><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></head><body class="wp-singular page-template-default page page-id-1869 page-parent wp-custom-logo wp-theme-stratusx wp-child-theme-stratusx-child groovy_menu_2-6-3 _masterslider _msp_version_3.7.7 turbo-hide-theme-header ehf-template-stratusx ehf-stylesheet-stratusx-child e-lazyload elementor-default elementor-kit-472 elementor-page elementor-page-1869 th-sticky-header e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit loaded headhesive"><header class="banner navbar navbar-default navbar-static-top dark-header headhesive--clone" role="banner" style="">
-<div class="container">
-<div class="navbar-header">
-<button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<div id="logo">
-<a href="https://www.intactix.ca/">
-<img alt="Intactix Systems" class="logo-main logo-reg" data-rjs="2" data-rjs-processed="true" height="25" src="https://www.intactix.ca/wp-content/uploads/2021/04/IntactixWhiteLogoAsset50-109x25@2x.png" width="109"/>
-</a>
-</div>
-</div>
-<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-<ul class="nav navbar-nav" id="menu-main-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-813"><a href="https://www.intactix.ca/hro/#KPIs">KPIs</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-811"><a href="https://www.intactix.ca/hro/#PerformanceAssurance">Performance Assurance</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-814"><a href="https://www.intactix.ca/hro/#CaseStudy22">Client Results</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-815"><a href="https://www.intactix.ca/hro/#Testimonials">Testimonials</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-841"><a href="https://www.intactix.ca/hro/#ContactUs">Contact</a></li>
-</ul> </nav>
-</div>
-</header><div class="wrap" role="document">
-<div class="content">
+.xd-video{margin:32px auto 40px;max-width:1140px}
+</style></head><body class="wp-singular page-template-default page page-id-1869 page-parent wp-custom-logo wp-theme-stratusx wp-child-theme-stratusx-child groovy_menu_2-6-3 _masterslider _msp_version_3.7.7 turbo-hide-theme-header ehf-template-stratusx ehf-stylesheet-stratusx-child e-lazyload elementor-default elementor-kit-472 elementor-page elementor-page-1869 th-sticky-header e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit loaded headhesive"><div id="tahefobu-header" class="turbo-header-template ta-sticky-header tahefobu-fallback tahefobu-ready" data-sticky="1" data-animation="0" style="--ta-sticky-top: 0px;">		<div data-elementor-type="wp-post" data-elementor-id="1970" class="elementor elementor-1970">
+							<div class="elementor-element elementor-element-69cb555a e-con-boxed e-con" data-id="69cb555a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-66c96cb2 e-con-full e-con" data-id="66c96cb2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-3ae7bb9d elementor-widget-mobile__width-auto elementor-widget elementor-widget-image" data-id="3ae7bb9d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.3 - 07-03-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="https://www.intactix.ca/">
+							<img width="436" height="100" src="https://www.intactix.ca/wp-content/uploads/2021/04/IntactixWhiteLogoAsset100.png" class="attachment-full size-full wp-image-521" alt="">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-69f3bbb3 e-con-full e-con" data-id="69f3bbb3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-5247c1e elementor-hidden-tablet elementor-hidden-mobile hfe-nav-menu__align-left hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-thhf-navigation-menu" data-id="5247c1e" data-element_type="widget" data-settings="{&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;220&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="thhf-navigation-menu.default">
+				<div class="elementor-widget-container">
+						<div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none" data-layout="horizontal">
+				<div role="button" class="hfe-nav-menu__toggle elementor-clickable" aria-haspopup="true" aria-expanded="false">
+					<span class="screen-reader-text">Menu</span>
+					<div class="hfe-nav-menu-icon">
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-align-justify" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>					</div>
+				</div>
+				<nav itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-close-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-full-width="yes">
+					<ul id="menu-1-5247c1e" class="hfe-nav-menu"><li id="menu-item-1999" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1869 current_page_item parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/" itemprop="url" class="hfe-menu-item">Project Overview</a></li>
+<li id="menu-item-2024" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/hro-hiringclients/" itemprop="url" class="hfe-menu-item">Hiring Clients</a></li>
+<li id="menu-item-2066" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/hro-contractors/" itemprop="url" class="hfe-menu-item">Contractors</a></li>
+</ul> 
+				</nav>
+			</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-5809e6e6 elementor-widget elementor-widget-button" data-id="5809e6e6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.intactix.ca/hro/#register" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-pen-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.94 74.17l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.75 18.75-49.15 0-67.91zm-246.8-20.53c-15.62-15.62-40.94-15.62-56.56 0L75.8 172.43c-6.25 6.25-6.25 16.38 0 22.62l22.63 22.63c6.25 6.25 16.38 6.25 22.63 0l101.82-101.82 22.63 22.62L93.95 290.03A327.038 327.038 0 0 0 .17 485.11l-.03.23c-1.7 15.28 11.21 28.2 26.49 26.51a327.02 327.02 0 0 0 195.34-93.8l196.79-196.79-82.77-82.77-84.85-84.85z"></path></svg>			</span>
+						<span class="elementor-button-text">Participate</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b8bf498 hfe-menu-item-center elementor-widget__width-initial elementor-hidden-desktop hfe-submenu-icon-arrow hfe-link-redirect-child elementor-widget elementor-widget-thhf-navigation-menu" data-id="b8bf498" data-element_type="widget" data-settings="{&quot;hamburger_align&quot;:&quot;right&quot;,&quot;hamburger_menu_align&quot;:&quot;center&quot;,&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:13,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="thhf-navigation-menu.default">
+				<div class="elementor-widget-container">
+						<div class="hfe-nav-menu hfe-layout-expandible hfe-nav-menu-layout expandible" data-layout="expandible">
+				<div role="button" class="hfe-nav-menu__toggle elementor-clickable" aria-haspopup="true" aria-expanded="false">
+					<span class="screen-reader-text">Menu</span>
+					<div class="hfe-nav-menu-icon">
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-align-justify" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>					</div>
+				</div>
+				<nav class="hfe-dropdown-expandible hfe-nav-menu__layout-expandible hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-close-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-full-width="yes">
+					<ul id="menu-1-b8bf498" class="hfe-nav-menu"><li id="menu-item-1999" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1869 current_page_item parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/" itemprop="url" class="hfe-menu-item">Project Overview</a></li>
+<li id="menu-item-2024" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/hro-hiringclients/" itemprop="url" class="hfe-menu-item">Hiring Clients</a></li>
+<li id="menu-item-2066" itemprop="name" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.intactix.ca/hro/hro-contractors/" itemprop="url" class="hfe-menu-item">Contractors</a></li>
+</ul> 
+				</nav>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+							</div>
+		</div><div class="wrap" role="document">
+  
+    <div class="content">
+
+        
 <div class="inner-container">
-<section class="content-editor">
-<div class="elementor elementor-1869" data-elementor-id="1869" data-elementor-type="wp-page">
-<div class="xd-video" style="max-width:1140px;margin:24px auto 40px"><div class="xd-label"><span class="xd-dot"></span>Video &middot; 1.5 min</div><h2 class="xd-title">Shared performance assurance, explained</h2><p class="xd-sub">Why contractor safety results stall, and how one shared framework for contractors and hiring clients aims to change that.</p><div class="xd-frame"><iframe src="https://scrimba.com/explain/guide0msmahj1b" scrolling="no" allow="autoplay; fullscreen" allowfullscreen title="Video: Shared performance assurance, explained"></iframe></div></div><div class="elementor-element elementor-element-00edbf2 e-con-boxed e-con animated fadeIn" data-element_type="container" data-id="00edbf2" data-settings='{"background_background":"classic","animation":"fadeIn","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-96c94c6 e-con-full e-con" data-element_type="container" data-id="96c94c6" data-settings='{"animation":"none","content_width":"full"}'>
-<div class="elementor-element elementor-element-957908e animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="957908e" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.11.3 - 07-03-2023 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Learn more aBOUT THE</h1> </div>
-</div>
-<div class="elementor-element elementor-element-d9a0abd animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d9a0abd" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">ACSA Safety Culture &amp; High Reliability Organization (HRO) Demonstration &amp; Evaluation Project​</h1> </div>
-</div>
-<div class="elementor-element elementor-element-9f2acb8 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="9f2acb8" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.11.3 - 07-03-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p>The Alberta Construction Safety Association (ACSA) is leading an industry-wide Demonstration &amp; Evaluation Project focused on evaluating a more effective approach to contractor performance assurance. <span data-teams="true">Intactix Systems serves in a project management and implementation role, with academic support provided through Athabasca University.</span></p><p>It is a practical industry initiative demonstrating and evaluating whether a Shared Performance Assurance Framework can help create the foundation for an industry-wide safety culture that integrates safety into everyday work while reducing administrative burden across the contractor ecosystem.</p> </div>
-</div>
-<div class="elementor-element elementor-element-d4f9eaf elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d4f9eaf" data-settings='{"_animation":"none"}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Toward A More Effective Approach to Contractor Performance Assurance</h2> </div>
-</div>
-<div class="elementor-element elementor-element-fab785d elementor-widget elementor-widget-image" data-element_type="widget" data-id="fab785d" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img alt="" class="attachment-full size-full wp-image-1875" data-rjs="2" data-rjs-processed="true" decoding="async" fetchpriority="high" height="1024" sizes="(max-width: 1536px) 100vw, 1536px" src="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2.png" srcset="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2.png 1536w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-300x200.png 300w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-1024x683.png 1024w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-768x512.png 768w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-38x25.png 38w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-120x80.png 120w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-394x263.png 394w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-915x610.png 915w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2-1240x827.png 1240w" width="1536"/> </div>
-</div>
-<div class="elementor-element elementor-element-3ad53ac elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="3ad53ac" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Across industry, organizations have invested enormous time, resources, and leadership attention into improving safety performance.</p><p>New programs, initiatives, contractor management systems, verification processes, and performance assurance requirements have become standard practice.</p> </div>
-</div>
-<div class="elementor-element elementor-element-4888bc3 e-con-boxed e-con" data-element_type="container" data-id="4888bc3" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-27b1f14 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="27b1f14" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Yet despite these efforts, industry continues to face the same uncomfortable realities:</p> </div>
-</div>
-<div class="elementor-element elementor-element-a8d0ab1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="a8d0ab1" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<link href="https://www.intactix.ca/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css" rel="stylesheet"/> <ul class="elementor-icon-list-items">
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Industry has struggled to meaningfully reduce serious incident rates.</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Similar incidents continue to repeat.</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Contractors continue to experience disproportionately high rates of serious injury and fatality.</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Administrative burden continues to increase for both Contractors and Hiring Clients.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-767c18e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="767c18e" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Industry is looking for practical solutions that simplify rather than add. The challenge is no longer effort. The challenge is results.</h2> </div>
-</div>
-<div class="elementor-element elementor-element-22c8db9 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="22c8db9" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Contractors and Hiring Clients ultimately want the same outcome: safe, reliable, and predictable operational performance.</p><p>Yet that outcome is often pursued through different systems, different measures, different expectations, and different contractor management processes.</p><p><strong>Industry has recognized that performance assurance is a shared challenge that requires a shared approach.</strong></p> </div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-e513c96 e-con-boxed elementor-invisible e-con" data-element_type="container" data-id="e513c96" data-settings='{"background_background":"classic","shape_divider_top":"pyramids","animation":"fadeIn","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-shape elementor-shape-top" data-negative="false">
-<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-<path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-</svg> </div>
-<div class="elementor-element elementor-element-6fbee14 e-con-full e-con" data-element_type="container" data-id="6fbee14" data-settings='{"animation":"none","content_width":"full"}'>
-<div class="elementor-element elementor-element-1b0e532 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1b0e532" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default"> A Demonstration of a Different Approach</h1> </div>
-</div>
-<div class="elementor-element elementor-element-782fb0f elementor-widget elementor-widget-image" data-element_type="widget" data-id="782fb0f" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img alt="" class="attachment-full size-full wp-image-2250" data-rjs="2" data-rjs-processed="true" decoding="async" height="557" sizes="(max-width: 1440px) 100vw, 1440px" src="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2.png" srcset="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2.png 1440w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-300x116.png 300w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-1024x396.png 1024w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-768x297.png 768w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-65x25.png 65w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-207x80.png 207w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-394x152.png 394w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-915x354.png 915w, https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2-1240x480.png 1240w" width="1440"/> </div>
-</div>
-<div class="elementor-element elementor-element-ce795fd elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ce795fd" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>This is not another safety requirement. It is a practical methodology designed to provide objective visibility into the factors that create operational performance.</p> </div>
-</div>
-<div class="elementor-element elementor-element-ce6105a e-con-boxed e-con" data-element_type="container" data-id="ce6105a" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-de556c7 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de556c7" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Grounded in applied behavioural science, sociotechnical risk science, and High Reliability Organization (HRO) principles, the project is utilizing a socio-technical methodology that operationalizes safety culture and operational reliability, providing a new approach to measuring performance that:</p> </div>
-</div>
-<div class="elementor-element elementor-element-c4315b9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="c4315b9" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<ul class="elementor-icon-list-items">
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Does not rely on employee surveys, interviews, or self-reported perceptions</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Minimizes administrative effort and disruption to normal operations</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Creates objective visibility into safety culture and operational performance</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Supports continuous performance assurance through ongoing monitoring</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-8328ca6 e-con-boxed e-con" data-element_type="container" data-id="8328ca6" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-9069fa6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="9069fa6" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Building on demonstrated results achieved within individual organizations, the initiative is evaluating whether a Shared Performance Assurance Framework can provide the common performance language, shared expectations, and measurable High Reliability Organization (HRO) performance needed to support an industry-wide safety culture. The objective is to achieve:</p> </div>
-</div>
-<div class="elementor-element elementor-element-b4b52b6 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="b4b52b6" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<ul class="elementor-icon-list-items">
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Reduced Serious Injury and Fatality (SIF) Exposure</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Stronger Operational Performance</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">More Effective Performance Assurance</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Less Complexity and Burden</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-b465a56 e-con-boxed elementor-invisible e-con" data-element_type="container" data-id="b465a56" data-settings='{"background_background":"classic","shape_divider_top":"pyramids","animation":"fadeIn","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-shape elementor-shape-top" data-negative="false">
-<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-<path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-</svg> </div>
-<div class="elementor-element elementor-element-ddaf46f e-con-boxed e-con" data-element_type="container" data-id="ddaf46f" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-e1755d3 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e1755d3" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">Project Leadership</h1> </div>
-</div>
-<div class="elementor-element elementor-element-d6b66fc e-con-boxed e-con" data-element_type="container" data-id="d6b66fc" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-11a3404 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="11a3404" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">Alberta Construction Safety Association (ACSA)</h1> </div>
-</div>
-<div class="elementor-element elementor-element-bded824 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="bded824" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Industry leadership, participant engagement, project support, and delivery coordination.</p> </div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-f37b58a e-con-boxed e-con" data-element_type="container" data-id="f37b58a" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-b270621 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b270621" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">Intactix </h1> </div>
-</div>
-<div class="elementor-element elementor-element-7d2e154 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7d2e154" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Architect of the Shared Performance Assurance Framework and provider of the methodology, technology platform, analytics, and implementation support used throughout the Demonstration &amp; Evaluation Project.</p> </div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1b00ed0 e-con-boxed e-con" data-element_type="container" data-id="1b00ed0" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-b00c6e9 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b00c6e9" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">Athabasca University</h1> </div>
-</div>
-<div class="elementor-element elementor-element-6d88064 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="6d88064" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Independent academic collaboration supporting evaluation design, methodological rigor, ethical governance, interpretation of findings, and scholarly dissemination<strong>.</strong></p> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-4cfba0ca e-con-boxed elementor-invisible e-con" data-element_type="container" data-id="4cfba0ca" data-settings='{"background_background":"classic","shape_divider_top":"triangle-asymmetrical","shape_divider_bottom_negative":"yes","shape_divider_bottom":"triangle-asymmetrical","animation":"fadeIn","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-shape elementor-shape-top" data-negative="false">
-<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-<path class="elementor-shape-fill" d="M738,99l262-93V0H0v5.6L738,99z"></path>
-</svg> </div>
-<div class="elementor-shape elementor-shape-bottom" data-negative="true">
-<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
-</svg> </div>
-<div class="elementor-element elementor-element-6cdc2aae animated-fast e-con-full e-con" data-element_type="container" data-id="6cdc2aae" data-settings='{"background_background":"classic","animation":"none","content_width":"full"}'>
-<div class="elementor-element elementor-element-37e9a3bd animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="37e9a3bd" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">An ACSA-Led Demonstration &amp; Evaluation Project</h2> </div>
-</div>
-<div class="elementor-element elementor-element-a8d9036 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="a8d9036" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<ul class="elementor-icon-list-items">
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Alberta's largest construction safety association </span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Represents more than 56,000 construction companies </span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Approved and administered by ACSA</span>
-</li>
-<li class="elementor-icon-list-item">
-<span class="elementor-icon-list-icon">
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg> </span>
-<span class="elementor-icon-list-text">Supporting industry-led demonstration and evaluation of a Shared Performance Assurance Framework</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="elementor-element elementor-element-cb1c7fc e-con-boxed e-con" data-element_type="container" data-id="cb1c7fc" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-5641b09 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5641b09" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Read Message from CEO</h2> </div>
-</div>
-<div class="elementor-element elementor-element-3962b08 elementor-widget elementor-widget-button" data-element_type="widget" data-id="3962b08" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button-link elementor-button elementor-size-sm" href="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-CEO-Hiring-Client-Message.pdf" role="button" target="_blank">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-left">
-<i aria-hidden="true" class="th-linea icon th-linea icon-basic-elaboration-document-download"></i> </span>
-<span class="elementor-button-text">Hiring Client Message</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-10af350 elementor-widget elementor-widget-button" data-element_type="widget" data-id="10af350" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button-link elementor-button elementor-size-sm" href="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-CEO-Contractor-Message.pdf" role="button" target="_blank">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-left">
-<i aria-hidden="true" class="th-linea icon th-linea icon-basic-elaboration-document-download"></i> </span>
-<span class="elementor-button-text">Contractor Message</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-862bc8c elementor-widget elementor-widget-menu-anchor" data-element_type="widget" data-id="862bc8c" data-widget_type="menu-anchor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.11.3 - 07-03-2023 */
-body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style> <div class="elementor-menu-anchor" id="register"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1782f8f7 e-con-full elementor-invisible e-con" data-element_type="container" data-id="1782f8f7" data-settings='{"background_background":"classic","animation":"fadeIn","animation_delay":100,"content_width":"full"}'>
-<div class="elementor-element elementor-element-206e89b9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="206e89b9" data-settings='{"_animation":"none"}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"> <span style="color:#f58233; font-weight:600">"</span>This project marks a major shift in contractor performance management. It introduces a practical, science-backed approach that makes safety <span style="color:#f58233; font-weight:600">culture measurable, reliable, and predictive.”</span> </h2> </div>
-</div>
-<div class="elementor-element elementor-element-fc5e5d9 e-con-boxed e-con" data-element_type="container" data-id="fc5e5d9" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-d4d72da elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="d4d72da" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Mark Hoosein<br/>Chief Executive Officer</p> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-abf436b e-con-boxed elementor-invisible e-con" data-element_type="container" data-id="abf436b" data-settings='{"background_background":"classic","animation":"fadeIn","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-dbdb3c2 e-con-boxed e-con" data-element_type="container" data-id="dbdb3c2" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-4379644 animated-fast elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4379644" data-settings='{"_animation":"none","_animation_delay":0}' data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h1 class="elementor-heading-title elementor-size-default">Who Should Participate</h1> </div>
-</div>
-<div class="elementor-element elementor-element-7540efa elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7540efa" data-settings='{"_animation":"none","_animation_tablet":"none"}' data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Join an industry-led initiative focused on improving how contractor safety performance is understood and managed.</p><p>This project is an opportunity to contribute to a more practical, shared approach that aims to reduce unnecessary complexity while strengthening safety outcomes across the industry.</p><p>We welcome the opportunity to discuss whether participation is a good fit for your organization.</p> </div>
-</div>
-<div class="elementor-element elementor-element-afa84d3 e-con-boxed e-con" data-element_type="container" data-id="afa84d3" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-46171b7 e-con-boxed e-con" data-element_type="container" data-id="46171b7" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-18348ce elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="18348ce" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button-link elementor-button elementor-size-sm" href="https://www.intactix.ca/hro-hiringclients/" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-text">I am a hiring client</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-f6766f2 e-con-boxed e-con" data-element_type="container" data-id="f6766f2" data-settings='{"content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-9b32eb5 elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="9b32eb5" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button-link elementor-button elementor-size-sm" href="https://www.intactix.ca/hro/hro-contractors/" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-text">I am a contractor</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1b26610 elementor-widget elementor-widget-html" data-element_type="widget" data-id="1b26610" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<!-- Image Map Generated by https://www.fla-shop.com/image-map/ -->
-<svg style="width:100%" viewbox="0 0 2528 1686" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	
+        <section class="content-editor">
+    		<div data-elementor-type="wp-page" data-elementor-id="1869" class="elementor elementor-1869">
+							<div class="xd-video"><div class="xd-label"><span class="xd-dot"></span>Video &middot; 1.5 min</div><h2 class="xd-title">Shared performance assurance, explained</h2><p class="xd-sub">Why contractor safety results stall, and how one shared framework for contractors and hiring clients aims to change that.</p><div class="xd-frame"><iframe src="https://scrimba.com/explain/guide0msmahj1b" scrolling="no" allow="autoplay; fullscreen" allowfullscreen title="Video: Shared performance assurance, explained"></iframe></div></div><div class="elementor-element elementor-element-00edbf2 e-con-boxed e-con animated fadeIn" data-id="00edbf2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-96c94c6 e-con-full e-con" data-id="96c94c6" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-957908e animated-fast elementor-widget elementor-widget-heading" data-id="957908e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.3 - 07-03-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Learn more aBOUT THE</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d9a0abd animated-fast elementor-widget elementor-widget-heading" data-id="d9a0abd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">ACSA Safety Culture &amp; High Reliability Organization (HRO) Demonstration &amp; Evaluation Project​</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9f2acb8 elementor-widget elementor-widget-text-editor" data-id="9f2acb8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.3 - 07-03-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>The Alberta Construction Safety Association (ACSA) is leading an industry-wide Demonstration &amp; Evaluation Project focused on evaluating a more effective approach to contractor performance assurance. <span data-teams="true">Intactix Systems serves in a project management and implementation role, with academic support provided through Athabasca University.</span></p><p>It is a practical industry initiative demonstrating and evaluating whether a Shared Performance Assurance Framework can help create the foundation for an industry-wide safety culture that integrates safety into everyday work while reducing administrative burden across the contractor ecosystem.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-d4f9eaf elementor-widget elementor-widget-heading" data-id="d4f9eaf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Toward A More Effective Approach to Contractor Performance Assurance</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fab785d elementor-widget elementor-widget-image" data-id="fab785d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img data-rjs="2" fetchpriority="high" decoding="async" width="1536" height="1024" src="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-2.png" class="attachment-full size-full wp-image-1875" alt="" data-rjs-processed="true">															</div>
+				</div>
+				<div class="elementor-element elementor-element-3ad53ac elementor-widget elementor-widget-text-editor" data-id="3ad53ac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Across industry, organizations have invested enormous time, resources, and leadership attention into improving safety performance.</p><p>New programs, initiatives, contractor management systems, verification processes, and performance assurance requirements have become standard practice.</p>						</div>
+				</div>
+		<div class="elementor-element elementor-element-4888bc3 e-con-boxed e-con" data-id="4888bc3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-27b1f14 elementor-widget elementor-widget-text-editor" data-id="27b1f14" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p class="MsoNormal">Yet despite these efforts, industry continues to face the same uncomfortable realities:</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a8d0ab1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a8d0ab1" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.intactix.ca/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Industry has struggled to meaningfully reduce serious incident rates.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Similar incidents continue to repeat.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Contractors continue to experience disproportionately high rates of serious injury and fatality.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Administrative burden continues to increase for both Contractors and Hiring Clients.</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-767c18e elementor-widget elementor-widget-heading" data-id="767c18e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Industry is looking for practical solutions that simplify rather than add. The challenge is no longer effort. The challenge is results.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-22c8db9 elementor-widget elementor-widget-text-editor" data-id="22c8db9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Contractors and Hiring Clients ultimately want the same outcome: safe, reliable, and predictable operational performance.</p><p>Yet that outcome is often pursued through different systems, different measures, different expectations, and different contractor management processes.</p><p><strong>Industry has recognized that performance assurance is a shared challenge that requires a shared approach.</strong></p>						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-e513c96 e-con-boxed e-con" data-id="e513c96" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;pyramids&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
+</svg>		</div>
+		<div class="elementor-element elementor-element-6fbee14 e-con-full e-con" data-id="6fbee14" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-1b0e532 animated-fast elementor-widget elementor-widget-heading" data-id="1b0e532" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default"> A Demonstration of a Different Approach</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-782fb0f elementor-widget elementor-widget-image" data-id="782fb0f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img data-rjs="2" decoding="async" width="1440" height="557" src="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-Research-Demonstration-Banner-v2.png" class="attachment-full size-full wp-image-2250" alt="" data-rjs-processed="true">															</div>
+				</div>
+				<div class="elementor-element elementor-element-ce795fd elementor-widget elementor-widget-text-editor" data-id="ce795fd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>This is not another safety requirement. It is a practical methodology designed to provide objective visibility into the factors that create operational performance.</p>						</div>
+				</div>
+		<div class="elementor-element elementor-element-ce6105a e-con-boxed e-con" data-id="ce6105a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-de556c7 elementor-widget elementor-widget-text-editor" data-id="de556c7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Grounded in applied behavioural science, sociotechnical risk science, and High Reliability Organization (HRO) principles, the project is utilizing a socio-technical methodology that operationalizes safety culture and operational reliability, providing a new approach to measuring performance that:</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-c4315b9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c4315b9" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Does not rely on employee surveys, interviews, or self-reported perceptions</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Minimizes administrative effort and disruption to normal operations</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Creates objective visibility into safety culture and operational performance</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Supports continuous performance assurance through ongoing monitoring</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-8328ca6 e-con-boxed e-con" data-id="8328ca6" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9069fa6 elementor-widget elementor-widget-text-editor" data-id="9069fa6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Building on demonstrated results achieved within individual organizations, the initiative is evaluating whether a Shared Performance Assurance Framework can provide the common performance language, shared expectations, and measurable High Reliability Organization (HRO) performance needed to support an industry-wide safety culture. The objective is to achieve:</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-b4b52b6 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b4b52b6" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Reduced Serious Injury and Fatality (SIF) Exposure</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Stronger Operational Performance</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">More Effective Performance Assurance</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Less Complexity and Burden</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b465a56 e-con-boxed e-con" data-id="b465a56" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;pyramids&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
+</svg>		</div>
+		<div class="elementor-element elementor-element-ddaf46f e-con-boxed e-con" data-id="ddaf46f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e1755d3 animated-fast elementor-widget elementor-widget-heading" data-id="e1755d3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Project Leadership</h1>		</div>
+				</div>
+		<div class="elementor-element elementor-element-d6b66fc e-con-boxed e-con" data-id="d6b66fc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-11a3404 animated-fast elementor-widget elementor-widget-heading" data-id="11a3404" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Alberta Construction Safety Association (ACSA)</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bded824 elementor-widget elementor-widget-text-editor" data-id="bded824" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p class="MsoNormal">Industry leadership, participant engagement, project support, and delivery coordination.</p>						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f37b58a e-con-boxed e-con" data-id="f37b58a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b270621 animated-fast elementor-widget elementor-widget-heading" data-id="b270621" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Intactix </h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7d2e154 elementor-widget elementor-widget-text-editor" data-id="7d2e154" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Architect of the Shared Performance Assurance Framework and provider of the methodology, technology platform, analytics, and implementation support used throughout the Demonstration &amp; Evaluation Project.</p>						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1b00ed0 e-con-boxed e-con" data-id="1b00ed0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b00c6e9 animated-fast elementor-widget elementor-widget-heading" data-id="b00c6e9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Athabasca University</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6d88064 elementor-widget elementor-widget-text-editor" data-id="6d88064" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Independent academic collaboration supporting evaluation design, methodological rigor, ethical governance, interpretation of findings, and scholarly dissemination<strong>.</strong></p>						</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4cfba0ca e-con-boxed e-con" data-id="4cfba0ca" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;triangle-asymmetrical&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;,&quot;shape_divider_bottom&quot;:&quot;triangle-asymmetrical&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M738,99l262-93V0H0v5.6L738,99z"></path>
+</svg>		</div>
+				<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+</svg>		</div>
+		<div class="elementor-element elementor-element-6cdc2aae animated-fast e-con-full e-con" data-id="6cdc2aae" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-37e9a3bd animated-fast elementor-widget elementor-widget-heading" data-id="37e9a3bd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">An ACSA-Led Demonstration &amp; Evaluation Project</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a8d9036 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a8d9036" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Alberta's largest construction safety association </span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Represents more than 56,000 construction companies </span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Approved and administered by ACSA</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Supporting industry-led demonstration and evaluation of a Shared Performance Assurance Framework</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cb1c7fc e-con-boxed e-con" data-id="cb1c7fc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5641b09 elementor-widget elementor-widget-heading" data-id="5641b09" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Read Message from CEO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3962b08 elementor-widget elementor-widget-button" data-id="3962b08" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-CEO-Hiring-Client-Message.pdf" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="th-linea icon th-linea icon-basic-elaboration-document-download"></i>			</span>
+						<span class="elementor-button-text">Hiring Client Message</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-10af350 elementor-widget elementor-widget-button" data-id="10af350" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.intactix.ca/wp-content/uploads/2026/06/ACSA-CEO-Contractor-Message.pdf" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="th-linea icon th-linea icon-basic-elaboration-document-download"></i>			</span>
+						<span class="elementor-button-text">Contractor Message</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-862bc8c elementor-widget elementor-widget-menu-anchor" data-id="862bc8c" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.11.3 - 07-03-2023 */
+body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div id="register" class="elementor-menu-anchor"></div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1782f8f7 e-con-full e-con" data-id="1782f8f7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:100,&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-206e89b9 elementor-widget elementor-widget-heading" data-id="206e89b9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"> <span style="color:#f58233; font-weight:600">"</span>This project marks a major shift in contractor performance management. It introduces a practical, science-backed approach that makes safety <span style="color:#f58233; font-weight:600">culture measurable, reliable, and predictive.”</span> </h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-fc5e5d9 e-con-boxed e-con" data-id="fc5e5d9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d4d72da elementor-widget elementor-widget-text-editor" data-id="d4d72da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Mark Hoosein<br>Chief Executive Officer</p>						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-abf436b e-con-boxed e-con" data-id="abf436b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-dbdb3c2 e-con-boxed e-con" data-id="dbdb3c2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4379644 animated-fast elementor-widget elementor-widget-heading" data-id="4379644" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Who Should Participate</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7540efa elementor-widget elementor-widget-text-editor" data-id="7540efa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Join an industry-led initiative focused on improving how contractor safety performance is understood and managed.</p><p>This project is an opportunity to contribute to a more practical, shared approach that aims to reduce unnecessary complexity while strengthening safety outcomes across the industry.</p><p>We welcome the opportunity to discuss whether participation is a good fit for your organization.</p>						</div>
+				</div>
+		<div class="elementor-element elementor-element-afa84d3 e-con-boxed e-con" data-id="afa84d3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-46171b7 e-con-boxed e-con" data-id="46171b7" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-18348ce elementor-align-center elementor-widget elementor-widget-button" data-id="18348ce" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.intactix.ca/hro-hiringclients/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">I am a hiring client</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f6766f2 e-con-boxed e-con" data-id="f6766f2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9b32eb5 elementor-align-center elementor-widget elementor-widget-button" data-id="9b32eb5" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.intactix.ca/hro/hro-contractors/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">I am a contractor</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1b26610 elementor-widget elementor-widget-html" data-id="1b26610" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Image Map Generated by https://www.fla-shop.com/image-map/ -->
+<svg style="width:100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2528 1686">
 <style>
 .image-mapper-shape {
     fill: rgba(0, 0, 0, 0);
@@ -1676,72 +1812,81 @@ g:hover .image-mapper-shape {
     opacity: 20%;
 }
 </style>
-<image style="width: 2528px;" xlink:href="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a.png"/>
-<a target="_self" xlink:href="https://www.intactix.ca/hro-hiringclients/" xlink:title="Hiring Clients">
+        
+<image xlink:href="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a.png" style="width: 2528px;"></image>
+<a xlink:href="https://www.intactix.ca/hro-hiringclients/" target="_self" xlink:title="Hiring Clients">
 <g>
-<rect class="image-mapper-shape" data-index="1" height="813.8575498575499" width="787.4491927825261" x="288.09116809116813" y="439.33903133903135"></rect>
+<rect x="288.09116809116813" y="439.33903133903135" width="787.4491927825261" height="813.8575498575499" class="image-mapper-shape" data-index="1"></rect>
 </g>
 </a>
-<a target="_self" xlink:href="https://www.intactix.ca/hro/hro-contractors/" xlink:title="Contractors">
+<a xlink:href="https://www.intactix.ca/hro/hro-contractors/" target="_self" xlink:title="Contractors">
 <g>
-<rect class="image-mapper-shape selected" data-index="2" height="818.659069325736" width="770.6438746438748" x="1481.2687559354226" y="427.335232668566"></rect>
+<rect x="1481.2687559354226" y="427.335232668566" width="770.6438746438748" height="818.659069325736" class="image-mapper-shape selected" data-index="2"></rect>
 </g>
 </a>
-</svg> </div>
-</div>
-<div class="elementor-element elementor-element-12d24c0 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-element_type="widget" data-id="12d24c0" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img alt="Participation" class="attachment-full size-full wp-image-1880" data-rjs="2" data-rjs-processed="true" decoding="async" height="1686" sizes="(max-width: 2528px) 100vw, 2528px" src="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a.png" srcset="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a.png 2528w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-300x200.png 300w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-1024x683.png 1024w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-768x512.png 768w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-1536x1024.png 1536w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-2048x1366.png 2048w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-37x25.png 37w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-120x80.png 120w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-394x263.png 394w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-915x610.png 915w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-1240x827.png 1240w, https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a-1619x1080.png 1619w" width="2528"/> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-382c5f19 e-con-boxed e-con" data-element_type="container" data-id="382c5f19" data-settings='{"background_background":"classic","content_width":"boxed"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-2d389298 elementor-widget elementor-widget-menu-anchor" data-element_type="widget" data-id="2d389298" data-widget_type="menu-anchor.default">
-<div class="elementor-widget-container">
-<div class="elementor-menu-anchor" id="ContactUs"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Comment form for pages -->
-<div class="container"> <div class="row">
-<div class="col-md-12">
-</div>
-</div>
-</div><!-- /.container --> <!-- End Comment form for pages -->
-</div><!-- /.inner-container -->
-</div><!-- /.content -->
-</div><div class="prefooter"></div><footer class="footer" role="contentinfo">
-<div class="container">
-<div class="footer-widgets row th-widget-area">
-<div class="footer-area-1 col-md-4 col-sm-6">
-<section class="widget text-2 widget_text"><div class="widget-inner"><h3 class="widget-title">About intactix</h3> <div class="textwidget"><p>Intactix Systems Inc. is a supply chain performance assurance platform.</p>
+</svg>		</div>
+				</div>
+				<div class="elementor-element elementor-element-12d24c0 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="12d24c0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img data-rjs="2" decoding="async" width="2528" height="1686" src="https://www.intactix.ca/wp-content/uploads/2026/06/Website-Graphic-3a.png" class="attachment-full size-full wp-image-1880" alt="Participation" data-rjs-processed="true">															</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-382c5f19 e-con-boxed e-con" data-id="382c5f19" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2d389298 elementor-widget elementor-widget-menu-anchor" data-id="2d389298" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+					<div id="ContactUs" class="elementor-menu-anchor"></div>
+				</div>
+				</div>
+					</div>
+				</div>
+							</div>
+		    </section>    
+        <!-- Comment form for pages -->
+	<div class="container">        <div class="row">
+			<div class="col-md-12">
+	        
+
+            </div>
+        </div>
+    </div><!-- /.container -->    <!-- End Comment form for pages -->
+    
+        
+                    
+    
+    </div><!-- /.inner-container -->
+    </div><!-- /.content -->
+  </div><footer class="footer" role="contentinfo">
+	<div class="container">
+							<div class="footer-widgets row th-widget-area">
+              	                    <div class="footer-area-1 col-md-4 col-sm-6">
+                    <section class="widget text-2 widget_text"><div class="widget-inner"><h3 class="widget-title">About intactix</h3>			<div class="textwidget"><p>Intactix Systems Inc. is a supply chain performance assurance platform.</p>
 <p>We improve third-party safety culture and operational risk performance so profoundly, our clients could never imagine going back to the old way of doing things.</p>
 </div>
-</div></section> </div>
-<div class="footer-area-2 col-md-4 col-sm-6">
-<section class="widget widget-th-contact-info">
-<div class="widget-inner">
-<h3 class="widget-title">Contact</h3>
-<div class="th-contact-info-widget">
-<div class="icon-blocks"><div class="icon-block"><p><a href="mailto:info@intactix.ca" target="_blank"><i class="fa fa-envelope-open-o"></i><span>info@intactix.ca</span></a></p></div><div class="icon-block"><p><a href="https://www.google.com/maps/place/340+12+Ave+SW+1050,+Calgary,+AB+T2R+1L5/data=!4m2!3m1!1s0x5371701d6f7aaaab:0xd79708641b5c0bf9?sa=X&amp;ved=2ahUKEwjGiPaUgZDwAhXEr54KHf95ASYQ8gEwAHoECAYQAQ"><i class="fa fa-map-o"></i><span>Location</span></a></p></div></div> </div>
-</div>
-</section>
-</div>
-</div>
-</div>
-<div class="footer-btm-bar">
-<div class="container">
-<div class="footer-copyright row">
-<div class="col-xs-12">
-<p><span class="footer_copy">© 2026 Intactix Systems Inc. - All Rights Reserved.</span> - <span class="footer_credit">Performance Assurance You Can See™</span></p>
-</div>
-</div>
-</div>
-</div>
+		</div></section>                    </div>
+                                                    <div class="footer-area-2 col-md-4 col-sm-6">
+                    
+				<section class="widget widget-th-contact-info">
+			<div class="widget-inner">
+									<h3 class="widget-title">Contact</h3>
+								<div class="th-contact-info-widget">
+					<div class="icon-blocks"><div class="icon-block"><p><a target="_blank" href="mailto:info@intactix.ca"><i class="fa fa-envelope-open-o"></i><span>info@intactix.ca</span></a></p></div><div class="icon-block"><p><a href="https://www.google.com/maps/place/340+12+Ave+SW+1050,+Calgary,+AB+T2R+1L5/data=!4m2!3m1!1s0x5371701d6f7aaaab:0xd79708641b5c0bf9?sa=X&amp;ved=2ahUKEwjGiPaUgZDwAhXEr54KHf95ASYQ8gEwAHoECAYQAQ"><i class="fa fa-map-o"></i><span>Location</span></a></p></div></div>				</div>
+			</div>
+		</section>
+
+		                    </div>
+                                                  				</div>
+			    </div>
+    <div class="footer-btm-bar">        
+        <div class="container">    
+            <div class="footer-copyright row">
+                <div class="col-xs-12">
+                    <p><span class="footer_copy">© 2026 Intactix Systems Inc. - All Rights Reserved.</span> - <span class="footer_credit">Performance Assurance You Can See™</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer></body></html>
